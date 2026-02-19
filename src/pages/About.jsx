@@ -219,16 +219,16 @@ const About = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16" id="about">
+    <section className="bg-[#0B1120] py-16" id="about">
       <div className="max-w-7xl mx-auto px-4 lg:px-14">
-        <Card padding>
+        <div className="p-10 bg-slate-950">
           {/* Header */}
           <div className="text-center mb-12">
             <motion.h1
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3"
+              className="text-3xl lg:text-4xl font-extrabold text-[#22D3EE] mb-3"
             >
               About Us
             </motion.h1>
@@ -237,7 +237,7 @@ const About = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-gray-600 text-sm lg:text-base"
+              className="text-[#F8FAFC] text-sm lg:text-base"
             >
               I am a full-stack web developer passionate about building responsive and interactive web applications with modern technologies.
             </motion.p>
@@ -263,11 +263,11 @@ const About = () => {
             <div className="md:col-span-7 space-y-6">
               {/* Who We Are */}
               <div>
-                <h2 className="text-xl lg:text-2xl font-bold text-blue-600 mb-2">
+                <h2 className="text-xl lg:text-2xl font-bold text-[#22D3EE] mb-2">
                   Who We Are
                 </h2>
-                <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
-                  I am a full-stack developer skilled in React.js, Next.js, Redux/Toolkit, MongoDB, HTML, CSS, Tailwind, MERN-stack, Sanity CMS, and Git. I am a quick learner and love collaborating to create amazing applications.
+                <p className="text-[#F8FAFC] text-sm lg:text-base leading-relaxed">
+               full-stack developer skilled in React.js, Next.js, Redux/Toolkit, MongoDB, HTML, CSS, Tailwind, MERN-stack, Sanity CMS, and Git. I am a quick learner and love collaborating to create amazing applications.
                 </p>
               </div>
 
@@ -280,7 +280,7 @@ const About = () => {
                       onClick={() => setActiveTab(tab.id)}
                       className={`px-4 py-2 font-semibold rounded-md transition-all duration-300 ${
                         activeTab === tab.id
-                          ? "bg-blue-600 text-white shadow-lg"
+                          ? "bg-[#22D3EE] text-white shadow-lg"
                           : "bg-gray-100 text-gray-800 hover:bg-blue-50"
                       }`}
                     >
@@ -294,7 +294,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-        </Card>
+        </div>
       </div>
     </section>
   );

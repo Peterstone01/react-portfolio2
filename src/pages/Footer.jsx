@@ -91,128 +91,17 @@
 // };
 
 // export default Footer;
-// // export default function Footer() {
-// //   return (
-// //     <footer className="py-6 bg-gray-800 text-white text-center">
-// //       <p>&copy; 2026 Ogechukwu Peter. All rights reserved.</p>
-// //       <div className="flex justify-center gap-4 mt-2">
-// //         <a href="#" className="hover:text-blue-400">GitHub</a>
-// //         <a href="#" className="hover:text-blue-400">LinkedIn</a>
-// //         <a href="#" className="hover:text-blue-400">Twitter</a>
-// //       </div>
-// //     </footer>
-// //   );
-// // }
-
-
-
-import React from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { BsWhatsapp } from "react-icons/bs";
-import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { navlinks } from "../constants/navlinks";
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8 px-6 lg:px-20">
-      {/* Logo & Intro */}
-      <div className="text-center mb-10">
-        <h1 className="text-2xl md:text-4xl font-bold text-emerald-500">
-          DiGITAL-stone
-        </h1>
-        <p className="text-gray-400 mt-2 text-sm md:text-base">
-          Fullstack Web Developer | MERN-stack Expert
-        </p>
-
-        {/* Social Icons */}
-        <div className="flex justify-center gap-4 mt-4">
-          <a
-            href="https://wa.me/2348138979218"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 bg-green-500 rounded-full hover:bg-green-600 transition"
-          >
-            <BsWhatsapp className="text-white text-xl" />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 bg-pink-500 rounded-full hover:bg-pink-600 transition"
-          >
-            <FaInstagram className="text-white text-xl" />
-          </a>
-          <a
-            href="https://x.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 bg-blue-600 rounded-full hover:bg-blue-700 transition"
-          >
-            <FaXTwitter className="text-white text-xl" />
-          </a>
-        </div>
-      </div>
-
-      {/* Main Footer Columns */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-        {/* About */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">About Us</h4>
-          <p className="text-gray-400 text-sm leading-relaxed">
-            We are a team of fullstack developers specializing in modern web
-            applications using MERN-stack and cutting-edge technologies.
-          </p>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">Contact</h4>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2">
-              <MdOutlineMarkEmailRead className="text-emerald-500 text-lg" />
-              peterogechukwu58@gmail.com
-            </li>
-            <li className="flex items-center gap-2">
-              <BsWhatsapp className="text-green-500 text-lg" />
-              +234-(0)-813-8979-218
-            </li>
-            <li className="flex items-center gap-2">
-              {/* <FaPhoneVolume className="text-blue-500 text-lg" /> */}
-              +234-(0)-813-8979-218
-            </li>
-          </ul>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
-            {navlinks.map((link, i) => (
-              <li key={i}>
-                <ScrollLink
-                  to={link.href}
-                  smooth={true}
-                  duration={500}
-                  className="cursor-pointer hover:text-emerald-500 transition"
-                >
-                  {link.name}
-                </ScrollLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Divider */}
-      <div className="border-t border-gray-700 mb-4"></div>
-
-      {/* Copyright */}
-      <div className="text-center text-gray-500 text-sm">
-        &copy; 2026 DiGITAL-stone. All rights reserved.
+    <footer className="py-6 bg-gray-800 text-white text-center">
+      <p>&copy; 2026 Ogechukwu Peter. All rights reserved.</p>
+      <div className="flex justify-center gap-4 mt-2">
+        <a href="#" className="hover:text-blue-400">GitHub</a>
+        <a href="#" className="hover:text-blue-400">LinkedIn</a>
+        <a href="#" className="hover:text-blue-400">Twitter</a>
       </div>
     </footer>
   );
-};
+}
 
-export default Footer;
+

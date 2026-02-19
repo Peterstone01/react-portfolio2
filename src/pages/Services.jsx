@@ -48,15 +48,15 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-gray-50 py-16 px-4 lg:px-14"
+      className="bg-[#0F172A] py-16 px-4 lg:px-14"
     >
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#22D3EE] mb-3">
           Services
         </h2>
         <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-4"></div>
-        <p className="text-gray-600 text-sm lg:text-base">
+        <p className="text-[#F8FAFC] text-sm lg:text-base">
           Explore the range of professional services I provide to help bring your ideas to life.
         </p>
       </div>
@@ -70,20 +70,20 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
+            className="bg-slate-950 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
           >
             {/* Icon */}
-            <div className="text-blue-600 mb-4">
+            <div className="text-[#22D3EE] mb-4">
               <item.Icon className="text-5xl lg:text-6xl" />
             </div>
 
             {/* Service Title */}
-            <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-xl lg:text-2xl font-semibold text-white mb-2">
               {item.name}
             </h3>
 
             {/* Service Description */}
-            <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
+            <p className="text-white/50 text-sm lg:text-base leading-relaxed">
               {item.text}
             </p>
           </motion.div>

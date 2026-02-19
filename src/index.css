@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 body {
   background-color: #f5f7fb;
@@ -6,6 +6,21 @@ body {
 
 @theme {
   --color-backround: #f5f7fb;
+  --color-primary: #02dd92;
+  --color-text: var(--color-slate-950);
+  --color-heading: var(--color-gray-700);
+} */
+
+
+@import "tailwindcss";
+
+body {
+  background-color: #f5f7fb;
+}
+
+@theme {
+  --color-backround: #0F172A;
+  --color-secondary: #F8FAFC,
   --color-primary: #02dd92;
   --color-text: var(--color-slate-950);
   --color-heading: var(--color-gray-700);

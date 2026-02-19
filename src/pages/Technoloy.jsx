@@ -54,7 +54,7 @@ import { motion } from "motion/react";
 
 const Technoloy = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-[#0F172A] py-16">
       <div className="max-w-7xl mx-auto px-4 lg:px-14">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -62,7 +62,7 @@ const Technoloy = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
+            className="text-3xl lg:text-4xl font-extrabold text-[#22D3EE] mb-4"
           >
             Technologies I Work With
           </motion.h2>
@@ -70,7 +70,7 @@ const Technoloy = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-600 text-lg lg:text-xl"
+            className="text-[#F8FAFC] text-lg lg:text-xl"
           >
             Here are some of the modern tools and technologies I use to build scalable and efficient applications.
           </motion.p>
@@ -85,17 +85,17 @@ const Technoloy = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
+              className="bg-[#1E293B] rounded-xl shadow-lg p-6 flex flex-col items-center  hover:shadow-2xl transition-shadow duration-300"
             >
               <img
                 src={item.img}
                 alt={item.title}
                 className="w-20 h-20 object-contain rounded-full mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-[#22D3EE] mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[#F8FAFC] text-sm">
                 {item.content}
               </p>
             </motion.div>

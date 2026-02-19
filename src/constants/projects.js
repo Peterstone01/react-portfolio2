@@ -8,7 +8,7 @@ export const projects = [
   {
     title: " Fullstack (MERN) E-commerce website  with Admin Panel",
     image: project2,
-    href: "https://stoneweb-supermarket.vercel.app/",
+    href: "https://peter-fashion-ecommerce-tts7.vercel.app/",
     description:
       "Built and deployed a modern Fullstack Ecommerce webpage with both client side and admin panel. the technologies used in the developement includes: Mongo Database for data Structure, Express Server, React.js for UI, JsonWebToken for authentication and authorization, Redux/Toolkit and Context API for state Management Localstorage, cookie-parser, Multer to handle file uploads and Deployment to Vercel",
   },

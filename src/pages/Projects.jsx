@@ -72,21 +72,21 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gray-50 py-16 px-4 lg:px-14"
+      className="bg-[#0B1120] py-16 px-4 lg:px-14"
     >
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#22D3EE] mb-3">
           My Recent Projects
         </h2>
-        <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-4"></div>
+        <div className="w-20 h-1 bg-[#22D3EE] mx-auto rounded-full mb-4"></div>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-gray-600 text-sm lg:text-base max-w-3xl mx-auto leading-relaxed"
+          className="text-white/50 text-sm lg:text-base max-w-3xl mx-auto leading-relaxed"
         >
-          These projects demonstrate my expertise in modern web development frameworks including React.js, Next.js, PostgreSQL (Supabase), authentication (Supabase, Auth.js, Clerk), Redux/Toolkit for state management, and more.
+          These projects demonstrate  expertise in modern web development frameworks including React.js,  Redux/Toolkit for state management, and more.
         </motion.p>
       </div>
 
@@ -99,7 +99,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col"
+            className="bg-slate-950 rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col"
           >
             {/* Image */}
             <Link to={item.href} className="block overflow-hidden">
@@ -112,15 +112,15 @@ const Projects = () => {
 
             {/* Content */}
             <div className="p-5 flex-1 flex flex-col">
-              <h3 className="text-xl font-semibold text-blue-600 mb-2 line-clamp-1">
+              <h3 className="text-xl font-semibold text-[#22D3EE] mb-2 line-clamp-1">
                 {item.title}
               </h3>
-              <p className="text-gray-700 text-sm flex-1 line-clamp-4">
+              <p className="text-white/40 text-sm flex-1 line-clamp-4">
                 {item.description}
               </p>
               <Link
                 to={item.href}
-                className="mt-4 inline-block text-blue-600 font-medium hover:underline"
+                className="mt-4 inline-block text-[#22D3EE] font-medium hover:underline"
               >
                 View Project →
               </Link>

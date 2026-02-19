@@ -7,17 +7,17 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="bg-gray-100 fixed w-full py-3 z-10 px-14 flex items-center justify-between ">
-      <Link className="text-green-500 font-bold text-3xl">DiGITAL-stone</Link>
+    <div className="bg-[#0F172A] fixed w-full mx-auto py-3 z-10 px-14 flex items-center justify-between ">
+      <Link className="text-[#22D3EE] font-bold text-3xl">DiGITAL-stone</Link>
       <div className="  flex items-center justify-center gap-5 text-gray-700     ">
         {navlinks.map((item, i) => (
           <div key={i} className="hidden md:flex items-center gap-1 ">
-            {<item.Icon />}
+            {<item.Icon  className="text-[#22D3EE]  hover:text-[#F8FAFC] "/>}
             <Link
               smooth={true}
               duration={300}
               to={item.href}
-              className="cursor-pointer hover:text-primary font-bold delay-75"
+              className="cursor-pointer text-[#22D3EE]   hover:text-[#F8FAFC] font-bold delay-75"
             >
               {item.name}
             </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={300}
                   to={item.href}
-                  className="cursor-pointer hover:text-primary font-bold delay-75"
+                  className="cursor-pointer text-[#22D3EE]  hover:text-[#F8FAFC]  font-bold delay-75 "
                 >
                   {item.name}
                 </Link>
