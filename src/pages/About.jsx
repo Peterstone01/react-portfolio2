@@ -181,7 +181,7 @@ const About = () => {
   const tabs = [
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
-    { id: "certification", label: "Certifications" },
+    { id: "awards", label: "Awards" },
   ];
 
   const contents = {
@@ -209,7 +209,7 @@ const About = () => {
         </li>
       </ul>
     ),
-    certification: (
+    awards: (
       <ul className="list-disc list-inside text-gray-700 text-sm lg:text-base space-y-2">
         <li>The Certified Ultimate React Course 2024: React, Next.js, Redux & More</li>
         <li>React - The Complete Guide 2025 (incl. Next.js, Redux) - Certified</li>

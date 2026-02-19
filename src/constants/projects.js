@@ -26,12 +26,5 @@ export const projects = [
     description:
       "Built some Crud Apps to showcase my ability on how to use the Tanstack Query,  React hook form for Form Validation how to query the Mongo database Atlas  and render the components on user interface",
   },
-  {
-    title:
-      " Deployed a Sanity Studio (Content Management Studio) to serve as a backend to perfom basic crud operations in your Blogs",
-    image: project10,
-    href: "https://blog-3.sanity.studio/structure",
-    description:
-      "The essence of building this web blog is to showcase my ability on how to use the postgress database (supabase), prisma Adapter manager, how to query the studio with Prisma Adapter and render the components on the Frontend",
-  },
+
 ];

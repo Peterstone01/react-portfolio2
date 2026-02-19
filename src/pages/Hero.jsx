@@ -143,13 +143,12 @@ const Hero = () => {
       {/* ///////////////////////////////////////////// */}
       <div className="absolute top-1/2 left-1/2 w-full md:w-[70%] -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-3xl md:text-5xl text-center  text-white font-bold   ">
-          DiGITAL-stone<span className=""> </span>
+         Fullstack (MERN-STACK) Developer<span className=""> </span>
           <div className="w-20 h-1 mt-2 bg-primary mx-auto mb-5"></div>
         </h1>
         <div>
           <p className="  text-center text-white max-w-4xl leading-5 px-3">
-            we are team of fullstack developer and expert in Mern-stack web
-            developement
+        Welcome to my workspce
           </p>
         </div>
       </div>
